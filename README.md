@@ -16,7 +16,7 @@ Users should be able to:
 ### Links
 
 - Solution URL:(https://github.com/thecodefan/Four-card-feature-section)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://thecodefan.github.io/Four-card-feature-section
 
 ## My process
 
