@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Poppins";
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+
+  align-items: center;
+  gap: 100px;
+}
+.tagLine {
+  height: 100px;
+  width: 450px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 15px;
+  margin-top: 20px;
+}
+.tagLine h3 {
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 20px;
+  color: hsl(234, 12%, 34%);
+}
+.tagLine h2 {
+  line-height: 20px;
+  color: hsl(234, 12%, 34%);
+}
+.tagLine p {
+  line-height: 20px;
+
+  color: hsl(229, 6%, 66%);
+}
+.boxesContainer {
+  width: 1200px;
+  height: 550px;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.rowOne,
+.rowTwo,
+.rowThree {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+.rowTwo {
+  gap: 20px;
+}
+.superBox,
+.teamBox,
+.karmaBox,
+.calculatorBox {
+  width: 350px;
+  height: 250px;
+
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+.karmaBox {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+.calculatorBox {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+.superBox {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+.teamBox {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+svg {
+  margin-top: 75px;
+  margin-left: 250px;
+}
+.rowTwo .teamBox svg {
+  margin-top: 50px;
+}
+.rowThree .calculatorBox svg {
+  margin-top: 50px;
+}
+.boxTag,
+.boxExplanation {
+  width: 75%;
+  margin-left: 20px;
+}
+.boxTag {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+}
+.tagKarma,
+.tagTeam,
+.tagSuper,
+.boxCalc {
+  color: hsl(234, 12%, 34%);
+}
+.explanationKarma,
+.explanationTeam,
+.explanationSuper,
+.explanationCalc {
+  color: hsl(229, 6%, 66%);
+}
+@media (max-width: 375px) {
+  .boxesContainer {
+    width: 375px;
+    height: 1450px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .tagLine {
+    height: 100px;
+    width: 375px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+  .tagLine h3 {
+    font-size: 20px;
+  }
+
+  .rowTwo {
+    gap: 0px;
+  }
+}
